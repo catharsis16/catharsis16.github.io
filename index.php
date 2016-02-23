@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html class="" lang="en">
-  <head> 
+  <head>
     <title>Catharsis 2016</title>
     <link rel="shortcut icon" href="favicon.png" />
-    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">    
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Eco Fest by IGDTU and AIACTR Delhi">
-    <meta name="author" content="Anurag Jain" >
+    <meta name="author" content="Anurag Jain Karan Rawat" >
     <meta name="keywords" content="College Fest, Eco Fest, Delhi Fest, IP University Fest">
-    <meta name="description" content="Eco Fest, College Fest, IGDTU Fest, AIACTR Fest, AIT Fest">    
+    <meta name="description" content="Eco Fest, College Fest, IGDTU Fest, AIACTR Fest, AIT Fest">
     <!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/output.css"><!--include all css in output.css-->
     <!--
@@ -222,7 +222,7 @@
         body_resize();
         timer();
       </script>
-  	<!-- /Catheresis PreLoader-->      
+  	<!-- /Catheresis PreLoader-->
     <!-- HEADER -->
     <section id="home" class="parallax">
       <div class="fullscreen-slider" data-images='["img/background/first.jpg"]' >
@@ -245,7 +245,7 @@
                 <a class="scroll arrow" href="#about"></a>
                 </div>
               </div>
-            </div>			
+            </div>
 		</div>
       </div>
     </section>
@@ -255,12 +255,12 @@
       <div class="container">
         <ul>
           	<!--<li><a href="eventlist.html"><span><i class="icon-shopping-cart"></i></span><div>Events</div></a></li>-->
-          	<li><a href="#about"><span><i class="icon-info"></i></span><div>About</div></a></li>            
+          	<li><a href="#about"><span><i class="icon-info"></i></span><div>About</div></a></li>
           	<li><a href="#events"><span><i class="icon-plus"></i></span><div>Campus Ambassadors</div></a></li>
           	<li><a href="#gallery"><span><i class="icon-pictures"></i></span><div>Events</div></a></li>
           	<li><a href="#sponsors"><span><i class="icon-star"></i></span><div>Sponsors</div></a></li>
 		<li><a href="#team"><span><i class="icon-users"></i></span><div>Team</div></a></li>
-<!--		<li><a href="#"><span><i class="icon-leaf"></i></span><div>Social Events</div></a></li>-->		
+<!--		<li><a href="#"><span><i class="icon-leaf"></i></span><div>Social Events</div></a></li>-->
 		<li><a href="https://www.youtube.com/watch?v=Ay8kbw5ZCXc&feature=youtu.be" target="_blank"><span><i class="icon-youtube"></i></span><div>YouTube</div></a></li>
 		<li><a href="https://www.facebook.com/catharsis15" target="_blank"><span><i class="icon-facebook"></i></span><div>Facebook</div></a></li>
 <!--          	<li><a href="#" target="_blank"><span><i class="icon-book-2"></i></span><div>Brochure</div></a></li>
@@ -310,24 +310,24 @@ So, come this February of 2016, as the new year ascends, we relive that divine b
                 <ul>
                     <li>
                         <h3 class="text-ser-2">What We Look For</h3>
-                        <h3 class="text-ser-1"><br>The Campus Ambassadorship Program by Catharsis'16 is a nationwide programme which exposes the students nationwide 
-						from various colleges as efficient managers and creative leaders and provides an opportunity to be a part of Catharsis  2016. Members not 
-						only acquire leadership/ entrepreneurial skills but also gain a social streak with a good character. We call upon our ambassadors to 
+                        <h3 class="text-ser-1"><br>The Campus Ambassadorship Program by Catharsis'16 is a nationwide programme which exposes the students nationwide
+						from various colleges as efficient managers and creative leaders and provides an opportunity to be a part of Catharsis  2016. Members not
+						only acquire leadership/ entrepreneurial skills but also gain a social streak with a good character. We call upon our ambassadors to
 						educate their constituents about the powerful role of socio-initiatives.</h3>
                     </li>
-                    
+
                     <li>
                         <h3 class="text-ser-2">Criteria</h3>
-                        <h3 class="text-ser-1"><br>All the college/university students from age group (17-25) holding some position of responsibility in 
-						their college and are capable of appreciably representing the views and policies of an ambassador during campaigns are eligible to apply. 
-						Applicant must be consistent to work efficiently during his/her tenure. 
+                        <h3 class="text-ser-1"><br>All the college/university students from age group (17-25) holding some position of responsibility in
+						their college and are capable of appreciably representing the views and policies of an ambassador during campaigns are eligible to apply.
+						Applicant must be consistent to work efficiently during his/her tenure.
 						A maximum of 2 ambassadors Would be selected from each college.</h3>
                     </li>
                     <li>
                         <h3 class="text-ser-2">Role</h3>
-                        <h3 class="text-ser-1"><br>We look for students who are leaders in their campus, leaders who can inspire their peers, collaborate with 
-						administrators and organize campus events to leave impact. It's a chance to develop and grow as an individual while adding an incredible 
-						line to your resume. This is for those who are having keen interest in updating people about various Catharsis'16 events through public 
+                        <h3 class="text-ser-1"><br>We look for students who are leaders in their campus, leaders who can inspire their peers, collaborate with
+						administrators and organize campus events to leave impact. It's a chance to develop and grow as an individual while adding an incredible
+						line to your resume. This is for those who are having keen interest in updating people about various Catharsis'16 events through public
 						meets, announcements, notices, social-media, web pages, etc.</h3>
                     </li>
                 </ul>
@@ -361,7 +361,7 @@ So, come this February of 2016, as the new year ascends, we relive that divine b
       <div id="portfolio-wrap">
         <div id="portfolio-page">
           <div id="portfolio-content">
-            <div class="container"> 
+            <div class="container">
               <div id="portfolio-control">
                 <div class="row">
                   <div class="col-md-4 col-sm-4 col-xs-4">
@@ -376,6 +376,7 @@ So, come this February of 2016, as the new year ascends, we relive that divine b
                 </div>
               </div>
               <!--<div id="portfolio-ajax"></div>-->
+
             </div>
           </div>
         </div>
@@ -496,12 +497,12 @@ So, come this February of 2016, as the new year ascends, we relive that divine b
         <div class="container">
           <div class="row">
           <div class="col-md-12">
-            <div class="title-tes clearfix pad-top"> 
+            <div class="title-tes clearfix pad-top">
                <h1 data-animated="bounceIn">NGO Partners</h1>
                <img src="./img/partners/chintan_logo.gif">
                <img src="./img/partners/goonj-logo.png">
             </div>
-            <div class="title-tes clearfix pad-top"> 
+            <div class="title-tes clearfix pad-top">
                <h1 data-animated="bounceIn">Media Partners</h1>
                <img src="./img/partners/Delhi-Greens.jpg">
             </div>
@@ -510,7 +511,36 @@ So, come this February of 2016, as the new year ascends, we relive that divine b
         </div>
       </div>
     </div>
-<!-- TEAM 
+    <div class="container" id="cu">
+      <section id="comments">
+          <div class="page-header">
+              <h2>Comment And Ask Anything</h2>
+              </div>
+    <div class="col-lg-8" navbar-right>
+     <form action="" class="form-horizontal">
+         <div class="form-group">
+             <label for="user-name" class="col-lg-2 control-label">NAME</label>
+             <div class="col-lg-10">
+                 <input type="text" class="form-control" name="name" id="user-fname" placeholder="Enter your First Name" onkeyup="lettersonly(this)">
+             </div>
+           </div>
+             <div class="form-group">
+                 <label for="user-meg" class="col-lg-2 control-label">MESSAGE</label>
+             <div class="col-lg-10">
+                 <textarea name="user-meg" id="user-meg" name="message" class="form-control" cols="20" rows="10" placeholder="Enter your Message"></textarea>
+            </div>
+            </div>
+         <div class="form-group">
+             <div class="col-lg-10 col-lg-offset-2">
+                 <button type="submit" class="btn btn-primary" name="post">Submit</button>
+      </div>
+             </div>
+         </form>
+
+</div>
+</section>
+</div>
+<!-- TEAM
     <section id="team" class="page">
       <div class="container">
         <div class="row">
@@ -613,12 +643,12 @@ So, come this February of 2016, as the new year ascends, we relive that divine b
           <div class="rower">
               <div id="left">
                 <p id="copyright">
-                   TOP <a class="scroll" href="#home"><img src="img/tt.png" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             
+                   TOP <a class="scroll" href="#home"><img src="img/tt.png" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                </div>
                <div id="left" style="font-family:robotothin;">Copyright. &copy;Catharsis 2016.All Right Reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
                <div> Developed By:<a href="https://www.linkedin.com/in/anuragjain11" target="_blank">Anurag Jain(4 Year ECE)</a><a href="https://www.linkedin.com/nhome/" target="_blank">&nbsp;&nbsp;Karan Rawat(2 Year ECE)</a></div>
           </div>
-        </div> 
+        </div>
     </footer>
     <!-- /FOOTER -->
     <!-- JS -->
@@ -642,3 +672,34 @@ So, come this February of 2016, as the new year ascends, we relive that divine b
     <script src="js/service-js.min.js"></script>
     </body>
 </html>
+
+
+
+<?php
+$name = $_POST["name"];
+$text = $_POST["message"];
+$post = $_POST["post"];
+
+if($post){
+  $write = fopen("com.txt","a+");
+  fwrite($write,"<u><b> $name</b></u><br>$text<br>");
+  fclose($write)
+
+  $read = fopen("com.txt","r+t");
+  echo "ALL Comments:<br>";
+
+  while(!feof($read)){
+    echo fread($read, 1024);
+  }
+  fclose($read);
+}
+else{
+  $read = fopen("com.txt","r+t");
+  echo "ALL Comments:";
+
+  while(!feof($read)){
+    echo fread($read, 1024);
+  }
+  fclose($read);
+}
+?>
