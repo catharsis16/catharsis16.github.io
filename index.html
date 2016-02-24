@@ -36,8 +36,19 @@
 </head>
   <body class="onepage">
 
-    <!--facebook-->
+    <!--facebook comments-->
     <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=826425784167458";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--facebook ends-->
+
+<!--facebook like-->
+<div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -530,14 +541,14 @@ So, come this February of 2016, as the new year ascends, we relive that divine b
       </div>
     </div>
 
-    <div class="container" id="cu">
+    <div class="container" id="cu"  >
       <section id="comments">
           <div class="page-header">
               <h2>Comment And Ask Anything</h2>
               </div>
 <div>
-  <div class="fb-comments" data-href="http://catharsis.in" data-width="450" data-numposts="5" id = "fbposts" style="float:center; margin:10px;"></div>
-
+  <div  class="col-lg-6" class="fb-comments" data-href="http://catharsis.in" data-width="450" data-numposts="5" id = "fbposts" style="float:center; margin:10px;"></div>
+  <div  class="col-lg-6" class="fb-like" data-href="https://www.facebook.com/urvar.ecology/?ref=br_rs" data-layout="standard" data-action="like" data-show-faces="true" data-share="true" style="float:center; margin:10px;></div>
 </div>
 </div>
 </section>
