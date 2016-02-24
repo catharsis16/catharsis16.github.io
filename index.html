@@ -5,17 +5,28 @@
     <link rel="shortcut icon" href="favicon.png" />
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Eco Fest by IGDTU and AIACTR Delhi">
+    <meta name="description" content="Eco Fest by AIACTR Delhi">
     <meta name="author" content="Anurag Jain Karan Rawat" >
     <meta name="keywords" content="College Fest, Eco Fest, Delhi Fest, IP University Fest">
     <meta name="description" content="Eco Fest, College Fest, IGDTU Fest, AIACTR Fest, AIT Fest">
     <!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/output.css"><!--include all css in output.css-->
 <style>
-/*#fbposts{
+@import url(http://fonts.googleapis.com/css?family=Oswald:700);
+body {
+  margin-left: : 70px;
+}
+h1 {
   text-align: center;
-  position: absolute;
-  }*/
+  color: #3d3d3d;
+  font-family: "Oswald";
+  font-weight: 700;
+  font-size: 5em;
+  margin: 0 25%;
+  border-top: .1em solid;
+  border-bottom: .1em solid;
+}
+
 </style>
     <!--
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -270,12 +281,11 @@
                 <!-- <div class="riz-text-e">25 March - 27 March</div>-->
                 </div>
                 <div class="riz-text-e">
-                  by AIACTR and IGDTU Delhi
-                <a class="scroll arrow" href="#about"></a>
-                </div>
-              </div>
-            </div>
+                  by AIACTR Delhi
+
+
 		</div>
+    <h1 id="countdown"></h1>
       </div>
     </section>
     <!-- /HEADER -->
@@ -548,13 +558,13 @@ So, come this February of 2016, as the new year ascends, we relive that divine b
               </div>
 <div>
   <div  class="col-lg-6" class="fb-comments" data-href="http://catharsis.in" data-width="450" data-numposts="5" id = "fbposts" style="float:center; margin:10px;"></div>
-  <div  class="col-lg-6" class="fb-like" data-href="https://www.facebook.com/urvar.ecology/?ref=br_rs" data-layout="standard" data-action="like" data-show-faces="true" data-share="true" style="float:right; margin:10px;></div>
-</div>
+  <div  class="col-lg-6" class="fb-like" data-href="https://www.facebook.com/urvar.ecology/?ref=br_rs" data-layout="standard" data-action="like" data-show-faces="true" data-share="true" style="float:right; margin:10px;"></div>
 </div>
 </section>
 </div>
 
-<!-- TEAM
+<!--
+ TEAM
     <section id="team" class="page">
       <div class="container">
         <div class="row">
@@ -684,6 +694,40 @@ So, come this February of 2016, as the new year ascends, we relive that divine b
     <script src="js/jquery.superslides.min.js"></script>
     <script src="js/jquery.sudoslider.min.js"></script>
     <script src="js/service-js.min.js"></script>
+    <script>
+    // set the date we're counting down to
+    var target_date = new Date("Mar 14, 2016").getTime();
+
+    // variables for time units
+    var days, hours, minutes, seconds;
+
+    // get tag element
+    var countdown = document.getElementById("countdown");
+
+    // update the tag with id "countdown" every 1 second
+    setInterval(function () {
+
+        // find the amount of "seconds" between now and target
+        var current_date = new Date().getTime();
+        var seconds_left = (target_date - current_date) / 1000;
+
+        // do some time calculations
+        days = parseInt(seconds_left / 86400);
+        seconds_left = seconds_left % 86400;
+
+        hours = parseInt(seconds_left / 3600);
+        seconds_left = seconds_left % 3600;
+
+        minutes = parseInt(seconds_left / 60);
+        seconds = parseInt(seconds_left % 60);
+
+        // format countdown string + set tag value
+        countdown.innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+
+    }, 1000);
+    </script>
+
     </body>
 </html>
 
