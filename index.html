@@ -6,24 +6,308 @@
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Eco Fest by AIACTR Delhi">
-    <meta name="author" content="Anurag Jain Karan Rawat" >
+    <meta name="author" content="Karan Rawat" >
     <meta name="keywords" content="College Fest, Eco Fest, Delhi Fest, IP University Fest">
-    <meta name="description" content="Eco Fest, College Fest, IGDTU Fest, AIACTR Fest, AIT Fest">
+    <meta name="description" content="Eco Fest, College Fest, AIACTR Fest, AIT Fest">
     <!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="css/output.css"><!--include all css in output.css-->
+	<link rel="stylesheet" type="text/css" href="css/output.css">
+   <link rel="stylesheet" href="css/font-awesome.css"><!--include all css in output.css-->
 <style>
-@import url(http://fonts.googleapis.com/css?family=Oswald:700);
-#timer {
+/*team start*/
+body {
+  background-color: #333;
+}
+.main.container {
+  padding: 30px;
+}
+.member-wrapper {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
+  -ms-transform: perspective(1000px);
+  -moz-transform: perspective(1000px);
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  margin-bottom: 30px;
+}
+.member-wrapper .member {
+  -webkit-transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+  -ms-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -moz-transform: perspective(1000px);
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.member-wrapper:hover .info {
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+.member-wrapper:hover .photo {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.member {
+	transition: 0.3s;
+	transform-style: preserve-3d;
+	position: relative;
+  padding-bottom: 130%;
+}
+.photo, .info {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: rotateY(0deg);
+  -moz-transition: 0.6s;
+  -moz-transform-style: preserve-3d;
+  -moz-transform: rotateY(0deg);
+  -o-transition: 0.6s;
+  -o-transform-style: preserve-3d;
+  -o-transform: rotateY(0deg);
+  -ms-transition: 0.6s;
+  -ms-transform-style: preserve-3d;
+  -ms-transform: rotateY(0deg);
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.photo {
+  background-size: cover;
+  background-position: 50% 50%;
+	z-index: 2;
+	transform: rotateY(0deg);
+  backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 6px;
+  -webkit-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  z-index: 2;
+}
+.info {
+	transform: rotateY(180deg);
+  backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #dadada;
+  border-radius: 6px;
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+.info h3 {
+  font-weight: bold;
+  font-size: 42px;
+  padding: 30px;
+  background-color: #7e57c2;
+  margin: 0;
+  color: #fff;
   text-align: center;
-  color: #3d3d3d;
-  font-family: "Oswald";
-  font-weight: 700;
-  font-size: 5em;
-  margin: 0 25%;
-/*  border-top: .1em solid;
-  border-bottom: .1em solid;*/
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.info .social {
+  padding: 50px 30px 30px;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+}
+.info .social {
+  position: relative;
+}
+.info .social::before {
+  content: '\f0d7';
+  font-family: 'FontAwesome';
+  font-size: 72px;
+  color: #7e57c2;
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  margin-left: -21px;
+}
+.info .social a {
+  color: #fff;
+}
+.info .social a i {
+  width: 40px;
+  line-height: 40px;
+  background-color: #333;
+  margin: 0 3px;
+  border-radius: 4px;
+  opacity: 0.4;
+  transition: 0.3s;
+}
+.info .social a i:hover {
+  opacity: 1;
+}
+.info .social a i.fa-facebook:hover { background-color: #3b5998; }
+.info .social a i.fa-linkedin:hover { background-color: #007bb6; }
+.info .social a i.fa-google-plus:hover { background-color: #dd4b39; }
+.info .social a i.fa-envelope:hover { background-color: #00a99e; }
+.info .bio {
+  padding: 30px;
+  text-align: justify;
+}
+.info .bio h4 { margin-top: 0; }
+#credits { color: #777; text-align: center; }
+#credits a { color: #7861af; }
+/*team end*/
+#footer1{
+  margin-top:  0px;
+  margin-bottom: -50px;
+}
+.foot:hover{
+  color: "#ff0000";
+}
+#body{
+margin: 0px;
+}
+a{
+	text-decoration:none !important;
+	}
+/*timer starts*/
+#countdown{
+	width: 465px;
+	height: 150px;
+	text-align: center;
+	background: #222;
+	background-image: -webkit-linear-gradient(top, #222, #333, #333, #222);
+	background-image:    -moz-linear-gradient(top, #222, #333, #333, #222);
+	background-image:     -ms-linear-gradient(top, #222, #333, #333, #222);
+	background-image:      -o-linear-gradient(top, #222, #333, #333, #222);
+	border: 1px solid #111;
+	border-radius: 5px;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
+	margin: auto;
+	padding: 24px 0;
+	position: absolute;
+  top: 425px; bottom: 0; left: 0; right: 0;
 }
 
+#countdown:before{
+	content:"";
+	width: 8px;
+	height: 65px;
+	background: #444;
+	background-image: -webkit-linear-gradient(top, #555, #444, #444, #555);
+	background-image:    -moz-linear-gradient(top, #555, #444, #444, #555);
+	background-image:     -ms-linear-gradient(top, #555, #444, #444, #555);
+	background-image:      -o-linear-gradient(top, #555, #444, #444, #555);
+	border: 1px solid #111;
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	display: block;
+	position: absolute;
+	top: 48px; left: -10px;
+}
+
+#countdown:after{
+	content:"";
+	width: 8px;
+	height: 65px;
+	background: #444;
+	background-image: -webkit-linear-gradient(top, #555, #444, #444, #555);
+	background-image:    -moz-linear-gradient(top, #555, #444, #444, #555);
+	background-image:     -ms-linear-gradient(top, #555, #444, #444, #555);
+	background-image:      -o-linear-gradient(top, #555, #444, #444, #555);
+	border: 1px solid #111;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	display: block;
+	position: absolute;
+	top: 48px; right: -10px;
+}
+
+#countdown #tiles{
+	position: relative;
+	z-index: 10;
+}
+
+#countdown #tiles > span{
+	width: 92px;
+	max-width: 92px;
+	font: bold 48px 'Droid Sans', Arial, sans-serif;
+	text-align: center;
+	color: #111;
+	background-color: #ddd;
+	background-image: -webkit-linear-gradient(top, #bbb, #eee);
+	background-image:    -moz-linear-gradient(top, #bbb, #eee);
+	background-image:     -ms-linear-gradient(top, #bbb, #eee);
+	background-image:      -o-linear-gradient(top, #bbb, #eee);
+	border-top: 1px solid #fff;
+	border-radius: 3px;
+	box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.7);
+	margin: 0 7px;
+	padding: 18px 0;
+	display: inline-block;
+	position: relative;
+}
+
+#countdown #tiles > span:before{
+	content:"";
+	width: 100%;
+	height: 13px;
+	background: #111;
+	display: block;
+	padding: 0 3px;
+	position: absolute;
+	top: 41%; left: -3px;
+	z-index: -1;
+}
+
+#countdown #tiles > span:after{
+	content:"";
+	width: 100%;
+	height: 1px;
+	background: #eee;
+	border-top: 1px solid #333;
+	display: block;
+	position: absolute;
+	top: 48%; left: 0;
+}
+
+#countdown .labels{
+	width: 100%;
+	height: 25px;
+	text-align: center;
+	position: absolute;
+	bottom: 8px;
+}
+
+#countdown .labels li{
+	width: 102px;
+	font: bold 25px 'Droid Sans', Arial, sans-serif;
+	color: #f47321;
+	text-shadow: 1px 1px 0px #000;
+	text-align: center;
+	text-transform: uppercase;
+	display: inline-block;
+  z-index: 10;
+}
+/*timer ends*/
 </style>
     <!--
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -266,13 +550,23 @@
                   </ul>
                 <!-- <div class="riz-text-e">25 March - 27 March</div>-->
                 </div>
-                <div class="riz-text-e">
+                <div class="riz-text-e" style="color:#000">
                   by AIACTR Delhi
 
 
 		</div>
-  <h1 id="timer"></h1>
+    <br>
+    <div id="countdown">
+      <div id='tiles'></div>
+      <div class="labels">
+        <li>Days</li>
+        <li>Hours</li>
+        <li>Mins</li>
+        <li>Secs</li>
       </div>
+    </div>
+  </div>
+  </div>
     </section>
     <!-- /HEADER -->
     <!-- NAV -->
@@ -315,7 +609,7 @@ So, come this February of 2016, as the new year ascends, we relive that divine b
     </section>
     <section id="events" class="page pad-bottom-2">
     <div class="clear"></h1></div>
-    <div class="page-yz"><center>  <h1 class="style1" data-animated="bounceIn">Campus Ambassadors</h1>
+    <div class="page-yz"><center>  <h1 class="style1" data-animated="bounceIn" style="color:#fff">Campus Ambassadors</h1>
     </center>
       <div class="parallax_wrap">
         <div class="container">
@@ -367,7 +661,7 @@ So, come this February of 2016, as the new year ascends, we relive that divine b
           </div>
         </div>
       </div>
-<CENTER>	<a href="http://goo.gl/forms/3MFlpSwZkV" target="_blank">Apply now</a></CENTER>
+<CENTER>	<a href="https://goo.gl/qfoyyJ" target="_blank">Apply now</a></CENTER>
     </div>
     <!-- /SERVICES -->
     <!-- GALLERY -->
@@ -537,21 +831,12 @@ So, come this February of 2016, as the new year ascends, we relive that divine b
       </div>
     </div>
 
-    <div class="container" id="cu"  >
-      <section id="comments">
-          <div class="page-header">
-              <h2>Comment And Ask Anything</h2>
-              </div>
-<div>
-  <div class="fb-comments" data-href="http://catharsis16.in/" data-numposts="5"></div>
-</div>
-</section>
-</div>
 
-<!--
- TEAM
-    <section id="team" class="page">
-      <div class="container">
+
+
+<!--Team -->
+    <section id="team" class="page" style="left:75px;">
+      <div class="container" >
         <div class="row">
           <div class="col-md-12 pad-top">
           <div class="title-team clearfix pad-top">
@@ -561,92 +846,121 @@ So, come this February of 2016, as the new year ascends, we relive that divine b
         </div>
       </div>
                       <div class="fullwidth" style="text-align:center;" align="center">
-				<div style="margin: 0px 85px; overflow:hidden;"><center>
-					<div class="imgholder">
-                                    		<div class="outer1 circle"></div>
-                                    		<div class="outer2 circle"></div>
-                                    		<figure>
-                                    			<img src="img/team/cs.jpg" />
-                                    			<figcaption class="caption">Official Id<font size=-1></br>info@catharsis15.in</br></font></figcaption>
-                                    		</figure>
-                                    	</div>
+				<div style="margin: 16px 16px; ">
+<center>
+
           	<div class="imgholder">
                                     		<div class="outer1 circle"></div>
                                     		<div class="outer2 circle"></div>
                                     		<figure>
-                                    			<img src="img/team/aa.jpg" />
-                                    			<figcaption class="caption">Abhi Arora<font size=-1></br></br></font></figcaption>
-                                    		</figure>
-                                    	</div>
-					<div class="imgholder">
-                                    		<div class="outer1 circle"></div>
-                                    		<div class="outer2 circle"></div>
-                                    		<figure>
-                                    			<img src="img/team/sj.jpg" />
-                                    			<figcaption class="caption">Suvi Jain<font size=-1></br></br></font></figcaption>
-                                    		</figure>
-                                    	</div>
-					<div class="imgholder">
-                                    		<div class="outer1 circle"></div>
-                                    		<div class="outer2 circle"></div>
-                                    		<figure>
                                     			<img src="img/team/ls.jpg" />
-                                    			<figcaption class="caption">Lokender Sarna<font size=-1></br></br></font></figcaption>
+                                    			<figcaption class="caption">Lokender Sarna<br>ChairPerson<font size=2></br></br></font></figcaption>
                                     		</figure>
                                     	</div>
 					<div class="imgholder">
                                     		<div class="outer1 circle"></div>
                                     		<div class="outer2 circle"></div>
                                     		<figure>
-                                    			<img src="img/team/gg.jpg" />
-                                    			<figcaption class="caption">Gunvardhan Gupta<font size=-1></br></br></font></figcaption>
+                                    			<img src="img/team/ra.jpg" />
+                                    			<figcaption class="caption">Rohan Arora<br>Vice ChairPerson<font size=2></br></br></font></figcaption>
                                     		</figure>
                                     	</div>
-					</center></div><br>
+					<div class="imgholder">
+                                    		<div class="outer1 circle"></div>
+                                    		<div class="outer2 circle"></div>
+                                    		<figure>
+                                    			<img src="img/team/hp.jpg" />
+                                    			<figcaption class="caption">Himanshu Pandey<br>General Secretary<font size=2></br></br></font></figcaption>
+                                    		</figure>
+                                    	</div>
+					<div class="imgholder">
+                                    		<div class="outer1 circle"></div>
+                                    		<div class="outer2 circle"></div>
+                                    		<figure>
+                                    			<img src="img/team/aj.jpg" />
+                                    			<figcaption class="caption">Anurag Jain<br>Web Developer<font size=2></br></br></font></figcaption>
+                                    		</figure>
+                                    	</div>
+					</center></div>
 
 
 
-                                    <div style="margin: 0px 175px;">
+                                <!--    <div style="margin: 0px 175px;">-->
                                         <div class="imgholder">
                                           <div class="outer1 circle"></div>
                                           <div class="outer2 circle"></div>
                                           <figure>
-                                            <img src="img/team/skc.jpg" />
-                                            <figcaption class="caption">Shubhit Kumar Chattarji<font size=-1></br></br></font></figcaption>
+                                            <img src="img/team/kr.jpg" />
+                                            <figcaption class="caption">Karan Rawat<br>Web Developer<font size=2></br></br></font></figcaption>
                                           </figure>
                                         </div>
-                                      	<div class="imgholder">
-                                      		<div class="outer1 circle"></div>
-                                      		<div class="outer2 circle"></div>
-                                      		<figure>
-                                      			<img src="img/team/hp.jpg" />
-                                      			<figcaption class="caption">Himanshu Pandey<font size=-1></br></br></font></figcaption>
-                                      		</figure>
-                                      	</div>
-                                      	<div class="imgholder">
-                                      		<div class="outer1 circle"></div>
-                                      		<div class="outer2 circle"></div>
-                                      		<figure>
-                                      			<img src="img/team/aj.jpg" />
-                                      			<figcaption class="caption">Anurag Jain<font size=-1></br></br></font></figcaption>
-                                      		</figure>
-                                      	</div>
-					<div class="imgholder">
-                                      		<div class="outer1 circle"></div>
-                                      		<div class="outer2 circle"></div>
-                                      		<figure>
-                                      			<img src="img/team/rt.jpg" />
-                                      			<figcaption class="caption">Rahul Tiwari<font size=-1></br></br></font></figcaption>
-                                      		</figure>
-                                      	</div></div>
+
+					</div>
 										</div>
 									<div style="margin: 0px auto;">
                       <p>&nbsp;</p>
         </div>
       </div>
     </div>
-  </section>-->
-    <!-- FOOTER -->
+  </section>
+  <div  class="well" id="cu"  >
+    <section id="comments">
+        <div class="page-header">
+            <h2>Comment And Ask Anything</h2>
+            </div>
+<div>
+<div class="fb-comments" data-href="http://catharsis16.in/" data-numposts="5"></div>
+</div>
+</section>
+</div>
+
+  <footer id="footer1">
+    <div class="container text-center">
+  </div>
+                  <ul id="social">
+
+               <div class="container text-center list-inline">
+                      <li> <a href="https://www.facebook.com/catharsis15" onmouseover="mouseover(this)" onmouseout="mouseout(this)">Facebook</a></li>
+                      <li> <a href="https://www.youtube.com/watch?v=Ay8kbw5ZCXc&feature=youtu.be" onmouseover="mouseover(this)" onmouseout="mouseout(this)">YouTube</a></li>
+                      <li> <a onmouseover="mouseover(this)" onmouseout="mouseout(this)">P:8826247976</a></li>
+
+                      <img src="http://hitwebcounter.com/counter/counter.php?page=6322789&style=0032&nbdigits=5&type=page&initCount=1996" title="url and counting visits" Alt="url and counting visits"   border="0" >
+                      </a>                                        <br/>
+                                                            <a title="Visits Over The Site"
+                                                              target="_blank" style="font-family: Arial, Helvetica, sans-serif;
+                                                              font-size: 9px; color: #6D5B77; text-decoration: underline ;"><em>Visits Over The Site                                        </em>
+                                                              </a>
+
+
+                   <p >&copy:Copyright @ 2016-URVAR CLUB <hr>DEVELOPED AND DESIGNED BY <span><a href="https://www.facebook.com/karan.rawat.583" onmouseover="mouseover(this)" onmouseout="mouseout(this)"> KARAN RAWAT</a></span>
+              </div>
+                                 </ul>
+
+           </footer>
+  <!--<footer>
+   <div class="container text-center">
+ </div>
+                 <ul id="social">
+
+              <div class="container text-center list-inline">
+                     <li> <a href="https://www.facebook.com/catharsis15" class="foot">Facebook</a></li>
+                     <li> <a href="https://www.youtube.com/watch?v=Ay8kbw5ZCXc&feature=youtu.be" class="foot">YouTube</a></li>
+                     <li> <a class="foot">P:8826247976</a></li>
+                     <a href="http://file:///C:/Users/KaranR/Desktop/catharsis16.github.io/catharsis16.github.io/index.html" target="_blank">
+                     <img src="http://hitwebcounter.com/counter/counter.php?page=6322789&style=0032&nbdigits=5&type=page&initCount=1996" title="url and counting visits" Alt="url and counting visits"   border="0" >
+                     </a>                                        <br/>
+                                                           <a href="file:///C:/Users/KaranR/Desktop/catharsis16.github.io/catharsis16.github.io/index.html" title="Accurate Visits"
+                                                             target="_blank" style="font-family: Arial, Helvetica, sans-serif;
+                                                             font-size: 9px; color: #6D5B77; text-decoration: underline ;"><em>WEBSITE HITS</em>
+                                                             </a>
+
+
+                  <p class="foot">&copy:Copyright @ 2016-DEVELOPED AND DESIGNED BY<span><a href="#"> KARAN RAWAT</a></span> AND ANURAG JAIN </p>
+             </div>
+                                </ul>
+
+          </footer>-->
+    <!-- FOOTER
     <footer id="footer" style="position:fixed;bottom:0px;left:0px;right:0px;z-index:6;height:50px;">
         <div class="container">
           <div class="rower">
@@ -658,7 +972,7 @@ So, come this February of 2016, as the new year ascends, we relive that divine b
                <div> Developed By:<a href="https://www.linkedin.com/in/anuragjain11" target="_blank">Anurag Jain(4 Year ECE)</a><a href="https://www.linkedin.com/nhome/" target="_blank">&nbsp;&nbsp;Karan Rawat(2 Year ECE)</a></div>
           </div>
         </div>
-    </footer>
+    </footer>-->
     <!-- /FOOTER -->
     <!-- JS -->
     <script type="text/javascript" src="js/jquery.scrollLock.min.js"></script>
@@ -679,7 +993,52 @@ So, come this February of 2016, as the new year ascends, we relive that divine b
     <script src="js/jquery.superslides.min.js"></script>
     <script src="js/jquery.sudoslider.min.js"></script>
     <script src="js/service-js.min.js"></script>
-    <script>
+
+    <script>function mouseover (x){
+    x.style.color="#ff0000";
+ }
+ function mouseout (x){
+    x.style.color="";
+
+ }</script>
+ <!--timer-->
+ <script>
+ var target_date = new Date().getTime() + (1000*3600*120); // set the countdown date
+var days, hours, minutes, seconds; // variables for time units
+
+var countdown = document.getElementById("tiles"); // get tag element
+
+getCountdown();
+
+setInterval(function () { getCountdown(); }, 1000);
+
+function getCountdown(){
+
+	// find the amount of "seconds" between now and target
+	var current_date = new Date().getTime();
+	var seconds_left = (target_date - current_date) / 1000;
+
+	days = pad( parseInt(seconds_left / 86400) );
+	seconds_left = seconds_left % 86400;
+
+	hours = pad( parseInt(seconds_left / 3600) );
+	seconds_left = seconds_left % 3600;
+
+	minutes = pad( parseInt(seconds_left / 60) );
+	seconds = pad( parseInt( seconds_left % 60 ) );
+
+	// format countdown string + set tag value
+	countdown.innerHTML = "<span>" + days + "</span><span>" + hours + "</span><span>" + minutes + "</span><span>" + seconds + "</span>";
+}
+
+function pad(n) {
+	return (n < 10 ? '0' : '') + n;
+}
+
+</script>
+<!--timer ends-->
+
+ <!--
     // set the date we're counting down to
     var target_date = new Date("Mar 14, 2016").getTime();
 
@@ -712,7 +1071,7 @@ So, come this February of 2016, as the new year ascends, we relive that divine b
 
     }, 1000);
     </script>
-
+-->
     </body>
 </html>
 
