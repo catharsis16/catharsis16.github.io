@@ -1002,8 +1002,8 @@ So, come this February of 2016, as the new year ascends, we relive that divine b
 
  }</script>
  <!--timer-->
- <script>
- var target_date = new Date().getTime() + (1000*3600*120); // set the countdown date
+ <!--<script>
+ var target_date = new Date().getTime(); // set the countdown date
 var days, hours, minutes, seconds; // variables for time units
 
 var countdown = document.getElementById("tiles"); // get tag element
@@ -1035,10 +1035,11 @@ function pad(n) {
 	return (n < 10 ? '0' : '') + n;
 }
 
-</script>
+</script>-->
 <!--timer ends-->
 
- <!--
+
+<script>
     // set the date we're counting down to
     var target_date = new Date("Mar 14, 2016").getTime();
 
@@ -1046,10 +1047,12 @@ function pad(n) {
     var days, hours, minutes, seconds;
 
     // get tag element
-    var countdown = document.getElementById("countdown");
-
+    var countdown = document.getElementById("tiles");
     // update the tag with id "countdown" every 1 second
-    setInterval(function () {
+    getCountdown();
+    setInterval(function () { getCountdown(); }, 1000);
+
+    function getCountdown() {
 
         // find the amount of "seconds" between now and target
         var current_date = new Date().getTime();
@@ -1066,12 +1069,11 @@ function pad(n) {
         seconds = parseInt(seconds_left % 60);
 
         // format countdown string + set tag value
-        countdown.innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s ";
+        countdown.innerHTML = "<span>" + days + "</span><span>" + hours + "</span><span>" + minutes + "</span><span>" + seconds + "</span>";
 
-    }, 1000);
+
+    };
     </script>
--->
     </body>
 </html>
 
