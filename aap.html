@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html class="" lang="en">
+  <head>  <title>Catharsis 2016</title>
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eco Fest by AIACTR Delhi">
+    <meta name="author" content="Karan Rawat" >
+    <meta name="keywords" content="College Fest, Eco Fest, Delhi Fest, IP University Fest">
+    <meta name="description" content="Eco Fest, College Fest, AIACTR Fest, AIT Fest">
+    <!-- CSS -->
+   <link rel="stylesheet" href="css/font-awesome.css"><!--include all css in output.css-->
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+      <style>
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+/*html,body {height: 100%;}*/
+body {
+font-family: Roboto, Consolas,monospace;
+text-align: center;
+color: white;
+/*width: 70%;
+margin: 10% auto;**/
+background: #17a88d;
+background: radial-gradient(ellipse at center,  #1abb9c 69%,#17a88d 100%);
+}
+/*h1 {
+font-weight: normal;
+font-size: 4rem;
+text-transform: uppercase;
+z-index: 500;
+}*/
+
+/*carousal*/
+@keyframes slideLeft {
+ 0% { opacity: 0; left: -30px; }
+ 100% { opacity: 1; left: 0; }
+}
+
+ #carousel, #carousel > div {
+     display: block;
+     width: 100%;
+     height: 100vh;
+     position: relative;
+     background-size: cover;
+     background-position: bottom;
+     background-repeat: no-repeat;
+     background-color: #455A64;
+     overflow: hidden;
+
+ }
+
+     #carousel > div {
+         position: absolute;
+     }
+
+     #carousel > i {
+         color: #5bbd72;
+         position: absolute;
+         font-size: 60px;
+         margin: 20px;
+         top: 40%;
+         text-shadow: 0 10px 2px #223422;
+         cursor: pointer;
+         -moz-transition: .2s;
+         -o-transition: .2s;
+         -webkit-transition: .2s;
+         transition: .2s;
+     }
+
+     #carousel > #left {
+         left: -100px;
+     }
+
+     #carousel > #right {
+         right: -100px;
+     }
+
+
+     #carousel:hover > #left {
+         left:0;
+     }
+
+     #carousel:hover > #right {
+         right: 0;
+     }
+
+     #carousel > i:active {
+         color: #ac4d4d;
+         text-shadow: 0 5px 2px #000000;
+         -moz-transform: translate(0,5px);
+         -ms-transform: translate(0,5px);
+         -o-transform: translate(0,5px);
+         -webkit-transform: translate(0,5px);
+         transform: translate(0,5px);
+         cursor: pointer;
+     }
+
+     #carousel > ul {
+         position: absolute;
+         bottom: 10px;
+         /*change left property to adjust the position of the buttons*/
+         left: 46%;
+         z-index:4;
+         padding: 0;
+         margin: 0;
+     }
+
+         #carousel > ul > li {
+             margin: 0;
+             padding: 0;
+             width: 20px;
+             height: 20px;
+             border-radius: 50%;
+             list-style: none;
+             float: left;
+             background-color: white;
+             margin-right: 20px;
+             cursor: pointer;
+             border: 5px solid #223422;
+             box-shadow: 0 0 5px 1px white;
+             -moz-transition: .3s;
+             -o-transition: .3s;
+             -webkit-transition: .3s;
+             transition: .3s;
+         }
+
+             #carousel > ul > li.showli {
+                 background-color: #ac4d4d;
+                 border: 5px solid white;
+                 box-shadow: 0 0 5px 1px #ac4d4d;
+                 -moz-animation: boing .5s forwards;
+                 -o-animation: boing .5s forwards;
+                 -webkit-animation: boing .5s forwards;
+                 animation: boing .5s forwards;
+             }
+
+             #carousel > ul > li:hover {
+                 background-color: #4800ff;
+                 border: 5px solid white;
+                 box-shadow: 0 0 5px 1px #ac4d4d;
+             }
+
+     #carousel > div.show {
+         z-index: 1;
+     }
+
+ @keyframes boing{0%{transform:scale(1.2)}40%{transform:scale(.6)}60%{transform:scale(1.2)}80%{transform:scale(.8)}100%{transform:scale(1)}}
+
+p{
+  font-family:"Segoe Print", "Times New Roman", Verdana;
+}
+#info{
+  font-family:"Segoe Print", "Times New Roman", Verdana;
+  font-size:15px;
+  text-align: center;
+  padding: 10px;
+}
+#otherinfo{
+  font-size:15px;
+  text-align: left;
+  padding: 10px;
+ line-height: 35px;
+}
+ </style>
+
+ </head>
+ <body>
+<!--   <div id="head" >
+<h1 >
+  ADOPT
+  <span>A</span>
+  <span>PARK</span>
+  <span>-</span>
+  <span>URVAR</span>
+  <span>CLUB</span>
+  <span>AIACTR</span>
+  <span>DELHI</span>
+  <span>INITIATIVE</span>
+</h1>
+</div>-->
+<div id="carousel">
+
+      <div class="show" style="background-image:url(http://www.lirent.net/wp-content/uploads/2014/10/Android-Lollipop-wallpapers-Google-Now-Wallpaper-2.png)"></div>
+    <div style="background-image:url(http://www.lirent.net/wp-content/uploads/2014/10/Android-Lollipop-wallpapers-Wall1.png)"></div>
+    <div style="background-image:url(https://lh4.googleusercontent.com/-c2kWlW-DE9A/VMSgQjCdffI/AAAAAAAADy4/tB__iZ25nxQ/w1080-h600/atardecer8.png)"></div>
+    <div style="background-image:url(http://papers.co/wallpaper/papers.co-ag01-toronto-material-design-illust-art-25-wallpaper.jpg)"></div>
+    <h2 style="z-index:2; position:absolute" >
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; ADOPT A PARK ECO-CLUB (URVAR 2016) INITIATIVE
+    </h2>
+    <p  style="z-index:2; position:relative; margin-top:250px; font-size:25px; text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; ">Together, we can create safe,<br>
+    clean spaces where friends can<br>
+    gather, children play and<br>
+    neighborhoods can grow<br><p>
+    <i id="left" class="glyphicon glyphicon-circle-arrow-left" style="z-index:5; position:absolute;"></i>
+    <i id="right" class="glyphicon glyphicon-circle-arrow-right" style="z-index:5; position:absolute;"></i>
+
+    <ul>
+        <li class="showli"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+
+
+    </ul>
+</div>
+<br><br><br>
+<p id='info'>
+URVAR'S Adopt a Park program is here for great season in 2016!
+<br>
+Adopt a Park is a program where community groups, indivisuals, and businesses groups with the URVAR Group of AIACTR,Delhi help maintain city parks by cutting the grass and keeping the park clean.
+</p><hr>
+<p id="otherinfo">Is there a small park in your neighborhood that needs some TLC? Get involved by beautifying your neighborhood through URVAR's Adopt-A-Park program.
+<br>
+The Adopt-a-Park program is based on the premise that citizens make a difference in ensuring that their neighborhood park, children’s playground, beach or natural area is clean, safe and well maintained. By adopting a park in your neighborhood, you can change the way your park looks and operates.
+<br>
+The work days could include:
+<br>
+                    • removing litter and recycling
+<br>
+                    • sweeping and picking up glass
+<br>
+                    • mulching trees
+<br>
+                    • planting flowers, shrubs and trees
+<br>
+                    • pruning* if approved by the Authorised Department
+<br>
+                    • watering plants
+<br>
+                    • painting benches and fences
+<br>
+                    • spreading FIBAR around play equipment
+<br>
+                    • removing graffiti Steps to Adopt-A-Park
+<br>
+                    • Select a park (or a portion of a larger park), beach, or children’s playground. Download and fill out the Adopt A Park Form and send it to the Friends of the Parks office.
+<br>
+                    • Notify the park supervisor that you would like to adopt the park.
+<br>
+                    • Conduct a park assessment survey to identify projects that you can do at the park (i.e. graffiti removal, fixing lights, planting or mulching trees, cleaning up litter.)
+<br>
+                    • Identify an Adopt-a-Park Coordinator to serve as Friends of the Parks’ contact. Coordinators’ Responsibilities
+<br>
+                    • Download and return the Park Assessment Form to Friends of the Parks
+<br>
+                    • Review the Steps to Running Successful Workdays
+<br>
+                    • Recruit volunteers for the Adopt-a-Park group.
+<br>
+                    • Schedule the park workdays. Adopting groups agree to complete four workdays during the year. Schedule workdays when the majority of your group is available. Inform your volunteers and Friends of the Parks at least two weeks before the designated park workday.
+<br>
+                    • Obtain necessary materials and tools from Friends of the Parks After assessing the needs of your park, you may need to obtain materials (i.e. garbage bags, mulch, pitchforks, wheelbarrows, paint, paint brushes, rakes, trowels, work gloves, hammers). Friends of the Parks may supply these materials.
+<br>
+                    • Have volunteers sign waiver
+<br>
+                    • Return the workday report to Friends of the Parks Friends of the Parks, and the URVAR Club appreciate your involvement and your commitment to improve your park. As an Adopt-a-Park group you will receive:
+<br>
+                    • Acknowledgment You’ll be recognized in Friends of the Parks’ newsletter(if there), you will be recognized in annual magazine of AIACTR,Delhi , You are always welcome to visit our campus and discuss the difficulties you are facing and we can get onto a decision together.
+<br>
+                    • Recognition Adopt-a-Park groups will be awarded a special Friends of the Parks’ URVAR certificate.
+<br>
+                    • Service Learning Hours Students participating in the Adopt-a-Park program will receive service learning hours for being part of the program.
+<br>
+                    • Partnership with URVAR , a nonprofit organization that is visible throughout Delhi.
+<br>
+                    • Invitations to URVAR's annual Volunteer Appreciation Party and Festival.
+<br>
+                    • Pride as an Adopt-a-Park group, you will have pride knowing that you care enough about your park or beach to make a personal commitment to improve and protect it.
+<br>
+
+Adoptable parks include triangles, traffic islands, and beauty spots that are under a quarter of an acre. To start the adoption process or to find out more about the Adopt-A-Park program, contact Lokender Sarna(ChairPerson Urvar Club ).
+<br>
+If you have any questions or concerns, please comment below . If You wnat to adopt a park you can give your details below and we will contact you ASAP!
+<br>
+<h3>
+Thank you for helping us ensure that every neighborhood has a future.
+</h3>
+</p>
+<br><br>
+<div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+
+var disqus_config = function () {
+this.page.url = file:///C:/Users/KaranR/Desktop/catharsis16.github.io/catharsis16.github.io/aap.html; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = ; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//karanrawat031.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+<script>
+
+
+$(function () {
+          slider();
+      });
+
+
+
+      function slider() {
+          var size = $("#carousel > div").length; //number of items in carousel
+          var position = 0; // current position of carousal
+          var sliderIntervalID; // used to clear autoplay
+          var sliderInterval = 4000; // interval of autoplay
+          var changeInterval = 1000; // interval between change of slides
+
+          $("#carousel > div").not(".show").fadeOut(); //fadeout all items except the one with .show
+
+          startSlider(); //starts autoplay
+
+          // function to start auto play
+          function startSlider() {
+              sliderIntervalID = setInterval(function () {
+                  run(1);
+              }, sliderInterval);
+          }
+
+          // on mouseover stop the autoplay
+          $("#carousel").mouseover(function () {
+              clearInterval(sliderIntervalID);
+          });
+          // on mouseout starts the autoplay
+          $("#carousel").mouseout(function () {
+              startSlider();
+          });
+
+          //on right clicking the carousal
+          $("#carousel > #right").click(function () {
+              run(1);
+          });
+
+
+          //on left button click of the carousal
+          $("#carousel > #left").click(function () {
+              run(0);
+          });
+
+
+          //moves the slider back or forth based on x (1 = forward 0 = backward)
+          function run(x) {
+              position = $("#carousel").find(".show").index();
+              if (x == 1)
+                  ++position;
+              else
+                  --position;
+              checker();
+              changeCarousal(); //function call that actually changes slides
+          }
+
+
+          //just a function to reposition the slider when out of bounds
+          function checker() {
+              if (position >= size) {
+                  position = 0;
+              }
+              else if (position < 0) {
+                  position = size - 1;
+              }
+              //console.log(position);
+          };
+
+
+          //this changes the image and button selection
+          function changeCarousal() {
+              $("#carousel").find(".show").removeClass("show").fadeOut();
+              $("#carousel > div").eq(position).fadeIn(changeInterval).addClass("show");
+              $("#carousel > ul").find(".showli").removeClass("showli");
+              $("#carousel > ul > li").eq(position).addClass("showli");
+          }
+
+          //when use clicks slider button
+          $("#carousel > ul > li").click(function () {
+              position = $(this).index();
+              var temp = $("#carousel").find(".show").index();
+              if (position != temp) {
+                  changeCarousal();
+              }
+          });
+      }
+
+ $(window).scroll(function () {
+          var h = ($(this).scrollTop());
+          $('#carousel > div').css({
+              'transform': 'scale(' + (1 + h / 2000) + ') translateY(' + h / 8 + '%) rotateZ(-' + (h / 90) + 'deg)'
+          });
+
+          $('#carousel > i').css({
+              'transform': 'translateY(' + h/2 + '%)'
+          });
+      });
+
+
+
+</script>
+
+<script id="dsq-count-scr" src="//karanrawat031.disqus.com/count.js" async></script>
+
+ </body>
+ </html>
